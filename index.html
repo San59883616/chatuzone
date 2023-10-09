@@ -9,63 +9,89 @@
 		<title>chatuzone</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
-				<marquee width="100%" direction="left" class="marquee" onmouseover="this.stop();" onmouseout="this.start();" style="background-color: #0d2d62;color: #fff;">
-  				Wasiliana nasi kupitia:- +255 688 272 958, +255 673 606 493, +255 782 043 472, +255 713 720 754, +255 713 809 859
-				</marquee>
-			</header>
+    <nav>
+        <a href="#menu">Menu</a>
+    </nav>
+<div class="head-top">
+            	<div class="container-fluid">
+               <div class="row d_flex">
+                  <div class="col-sm-3">
+                     <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" /></a>
+                     </div>
+</header>
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
-				</ul>
-			</nav>
-<nav>
-				</nav>
-			</header>
-		<!-- Banner -->
-			<section id="banner" style="margin-left: 20px;margin-right: 20px;">
-				<div class="inner">
-					<h1>Welcome to the landing page of Chatuzone<br />
-					<a href="https://chatuzone.tech">chatuzone</a></h1>
-					<ul class="actions">
-					</ul>
-				</div>
-			</section>
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generic.html">Generic</a></li>
+        <li><a href="elements.html">Elements</a></li>
+	<li><a href="Login.html">Login</a></li>
+    </ul>
+</nav>
 
-		<!-- One -->
-			<article id="one" class="post style1" style="margin-left: 20px;margin-right: 20px;">
-				<div class="image">
-					<img src="images/pic14.jpg" alt="" data-position="75% center" />
+		</header>
+
+		<!-- barner-->
+			<article id="barner" class="post style1" style="margin-left: 20px;margin-right: 20px;">
+				<div class="container">
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+						  <!-- Slides -->
+						  <div class="swiper-slide"><img src="images/1.jpg"></div>
+						  <div class="swiper-slide"><img src="images/2.jpg"></div>
+						  <div class="swiper-slide"><img src="images/3.jpg"></div>
+						  <div class="swiper-slide"><img src="images/4.jpg"></div>
+						</div>
+
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+					  
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					  
+					  </div>
 				</div>
-				<div class="content">
-					<div class="inner">
-						<header>
-							<h2><a href="generic.html">Ipsum lorem sed magna</a></h2>
-							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
-						</header>
-						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
-						<ul class="actions">
-							<li><a href="generic.html" class="button alt">Read More</a></li>
-						</ul>
-					</div>
-					<div class="postnav">
-						<a href="#" class="prev disabled"><span class="icon fa-chevron-up"></span></a>
-						<a href="#two" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
-					</div>
-				</div>
+
+				<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+				
+				<script>
+				const swiper = new Swiper('.swiper', {
+					autoplay: {
+					  delay: 3000,
+					  disableOnInteraction: false,
+					},
+				  loop: true,
+				
+				  pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				  },
+				
+				  navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				  },
+				
+				});
+				
+				</script>
+	
 			</article>
 
 		<!-- Two -->
-			<article id="two" class="post invert style1 alt" style="margin-left: 20px;margin-right: 20px;">
+			<article id="two" class="post invert style1" style="margin-left: 20px;margin-right: 20px;">
 				<div class="image">
 					<img src="images/pic13.jpg" alt="" data-position="10% center" />
 				</div>
@@ -73,7 +99,6 @@
 					<div class="inner">
 						<header>
 							<h2><a href="generic.html">Donec ex risus mollis</a></h2>
-							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
@@ -88,7 +113,7 @@
 			</article>
 
 		<!-- Three -->
-			<article id="three" class="post style2" style="margin-left: 20px;margin-right: 20px;">
+			<article id="three" class="post style2" style1" style="margin-left: 20px;margin-right: 20px;">
 				<div class="image">
 					<img src="images/pic12.jpg" alt="" data-position="80% center" />
 				</div>
@@ -96,7 +121,6 @@
 					<div class="inner">
 						<header>
 							<h2><a href="generic.html">Sed tempus interdum</a></h2>
-							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
@@ -111,7 +135,7 @@
 			</article>
 
 		<!-- Four -->
-			<article id="four" class="post invert style2 alt" style="margin-left: 20px;margin-right: 20px;">
+			<article id="four" class="post invert style2 alt" style1" style="margin-left: 20px;margin-right: 20px;">
 
 				<div class="image">
 					<img src="images/pic14.jpg" alt="" data-position="60% center" />
@@ -120,7 +144,6 @@
 					<div class="inner">
 						<header>
 							<h2><a href="generic.html">Adipiscing sed urna</a></h2>
-							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
@@ -135,7 +158,7 @@
 			</article>
 
 		<!-- Five -->
-			<article id="five" class="post style3" style="margin-left: 20px;margin-right: 20px;">
+			<article id="five" class="post style3" style1" style="margin-left: 20px;margin-right: 20px;">
 				<div class="image">
 					<img src="images/pic13.jpg" alt="" data-position="5% center" />
 				</div>
@@ -143,7 +166,6 @@
 					<div class="inner">
 						<header>
 							<h2><a href="generic.html">Interdum et rutrum</a></h2>
-							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>
 						</header>
 						<p>Nullam posuere erat vel placerat rutrum. Praesent ac consectetur dui, et congue quam. Donec aliquam lacinia condimentum. Integer porta massa sapien, commodo sodales diam suscipit vitae. Aliquam quis felis sed urna semper semper. Phasellus eu scelerisque mi. Vivamus aliquam nisl libero, sit amet scelerisque ligula laoreet vel.</p>
 						<ul class="actions">
@@ -158,7 +180,7 @@
 			</article>
 
 		<!-- Six -->
-			<article id="six" class="post invert style3 alt" style="margin-left: 20px;margin-right: 20px;">
+			<article id="six" class="post invert style3 alt" style1" style="margin-left: 20px;margin-right: 20px;">
 				<div class="image">
 					<img src="images/pic12.jpg" alt="" data-position="80% center" />
 				</div>
@@ -173,8 +195,9 @@
 						</ul>
 					</div>
 					<div class="postnav">
-						<a href="#five" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+						<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;"><i class="fa fa-angle-double-up"></i></a>
 						<a href="#" class="scrolly next disabled"><span class="icon fa-chevron-down"></span></a>
+
 					</div>
 				</div>
 			</article>
@@ -199,6 +222,6 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+		<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-double-up"></i></a>
 	</body>
 </html>
